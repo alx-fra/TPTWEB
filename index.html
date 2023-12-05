@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="icon"
+        href="https://www.era.pt/Portals/0/10_Icones-e-Logo-ERA/ERA-Imobiliaria-Portugal.svg?ver=WTl9Qq9m6PpLQ276rMh6Vg%3d%3d">
+    <title>ERA Imobiliária</title>
+</head>
+
+<body>
+    <script type="text/javascript" src="logica.js"></script>
+    <div class="menu">
+        <div class="barra_inicial">
+            <div class="logo">
+                <a id="logo_era" href="https://www.era.pt/">
+                    <img src="imagens/logo_era.png" />
+                </a>
+            </div>
+            <div class="sub_menu">
+                <button><b>Buy</b></button>
+                <button><b>Rent</b></button>
+                <button><b>Sell</b></button>
+                <button><b>ERA Radar</b></button>
+                <button>Careers</button>
+                <button>Advantages</button>
+                <button>Contact Information</button>
+                <button> <img src="imagens/coracao.png">0</button>
+                <button> <img src="imagens/relogio.png">0</button>
+                <button> <img src="imagens/user.png"></button>
+            </div>
+        </div>
+        <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+        <div class="pesquisa">
+            <div id="pesquisa_1">
+                <button id="buy"><b>BUY<img src="imagens/seta_baixo.svg" style="margin-left: 50px"></b></button>
+                <button id="property_type"><b>PROPERTY TYPE<img src="imagens/seta_baixo.svg"></b></button>
+                <button id="rooms"><b>ROOMS<img src="imagens/seta_baixo.svg" style="margin-left: 30px"></b></button>
+                <input type="text" id="barra_pesquisa" placeholder="Location(Municipality, Parish, Area)" />
+                <button id="find"><b>FIND</b></button>
+            </div>
+            <div id="pesquisa_2">
+                <button id="options" onclick="opcoes()"><img src="imagens/lupa.svg"><b>Options</b></button>
+            </div>
+        </div>
+        <div id="separador_vermelho">.</div>
+    </div>
+    <div class="titulo">
+        <h1> HIGHLIGHTS</h1>
+    </div>
+    <div class="container">
+        <h2 id="all"> ALL</h2>
+        <h2>ERA WARRANTY </h2>
+        <h2>EXCLUSIVE</h2>
+        <h2> DEVELOPMENTS</h2>
+        <h2> VIRTUAL TOUR </h2>
+    </div>
+    <div class="corpo">
+        <div class="image-grid">
+            <div id="casa_1">
+                <img src="imagens/casa_1.png">
+            </div>
+            <div id="casa_2">
+                <img src="imagens/casa_2.png">
+            </div>
+            <div id="casa_3">
+                <img src="imagens/casa_3.png">
+            </div>
+            <div id="casa_4">
+                <img src="imagens/casa_4.png">
+            </div>
+            <div id="casa_5">
+                <img src="imagens/casa_5.png">
+            </div>
+            <div id="casa_6">
+                <img src="imagens/casa_6.png">
+            </div>
+            <div id="casa_7">
+                <img src="imagens/casa_7.png">
+            </div>
+            <div id="casa_8">
+                <img src="imagens/casa_8.png">
+            </div>
+            <div id="casa_9">
+                <img src="imagens/casa_9.png">
+            </div>
+            <div id="casa_10">
+                <img src="imagens/casa_10.png">
+            </div>
+            <div id="casa_11">
+                <img src="imagens/casa_11.png">
+            </div>
+            <div id="casa_12">
+                <img src="imagens/casa_12.png">
+            </div>
+            <div id="casa_13">
+                <img src="imagens/casa_13.png">
+            </div>
+            <div id="casa_14">
+                <img src="imagens/casa_14.png">
+            </div>
+            <div id="casa_15">
+                <img src="imagens/casa_15.png">
+            </div>
+        </div>
+        <div class="fundo_corpo">
+            <div id="titulo_fundo">
+                People who buy or sell a house with<br>
+                ERA have more advantages.
+            </div>
+            <div id="flex_fundo">
+                <div id="warranty">
+                    <img src="imagens/garantia.jpg">
+                    <div id="titulo">ERA WARRANTY</div>
+                    <div id="corpo">A warranty offered by ERA for homebuyers that
+                        covers unexpected repairs that may occur after the
+                        purchase.
+                    </div>
+                    <div id="rodape">FIND OUT MORE</div>
+                </div>
+                <div id="energy">
+                    <img src="imagens/energy.jpg">
+                    <div id="titulo">ENERGY PERFORMANCE CERTIFICATE</div>
+                    <div id="corpo">ERA Warranty has 1+ advantage: a partnership ERA |
+                        EDP which guarantees the Energy Performance
+                        Certificate, required for listing your house, and pay it
+                        later...</div>
+                    <div id="rodape">FIND OUT MORE</div>
+                </div>
+                <div id="selecao">
+                    <img src="imagens/selecao.jpg">
+                    <div id="titulo">ERA NEW DEVELOPMENTS</div>
+                    <div id="corpo">This is the largest selection of new developments
+                        throutghout country. Projects designed to detail
+                        with the most demainding quality standarts. A
+                        unique...</div>
+                    <div id="rodape">FIND OUT MORE</div>
+                </div>
+                <div id="casa_nova">
+                    <img src="imagens/casa_nova.jpg">
+                    <div id="titulo">NEW HOMES</div>
+                    <div id="corpo">An ERA selection of New Homes, for those who
+                        prefer to live all the advantages of a newly built
+                        home.</div>
+                    <div id="rodape">FIND OUT MORE</div>
+                </div>
+
+            </div>
+        </div>
+        <div class="common_searches">
+            <div id="titulo_common">
+                Most common searches
+            </div>
+            <div id="grid_searches">
+                <div id="apartments">
+                    <div id="titulo">Apartments</div>
+                    <div id="cidades">Lisboa, Amadora, Sintra, Almada, Gondomar, Maia,
+                        Porto, Seixal, Cascais, Guarda
+                    </div>
+                </div>
+                <div id="houses">
+                    <div id="titulo">houses</div>
+                    <div id="cidades">Ponta Delgada, Bragança, Évora, Almada, Mafra, Vila
+                        Nova de Gaia, Matosinhos, Sintra, Amares, Azambuja
+                    </div>
+                </div>
+                <div id="lands">
+                    <div id="titulo">Lands</div>
+                    <div id="cidades">Águeda, Ponte de Lima, Proença-a-Nova, Barcelos,
+                        Amares, Esposende, Marco de Canaveses, Guarda,
+                        Tomar, Alcoutim
+                    </div>
+                </div>
+                <div id="retail">
+                    <div id="titulo">Retail</div>
+                    <div id="cidades">Anadia, Guarda, Bragança, Braga, Lisboa, Oliveira do
+                        Bairro, Figueira da Foz, Lamego, Lourinhã, Faro
+                    </div>
+                </div>
+                <div id="farms">
+                    <div id="titulo">Farms and Estates</div>
+                    <div id="cidades">Lisboa, Ribeira Grande, Penamacor, Évora, Castelo
+                        Branco, Lagoa (São Miguel), Odemira, Felgueiras, Ponta
+                        Delgada, Grândola
+                    </div>
+                </div>
+                <div id="property">
+                    <div id="titulo">Property with Business</div>
+                    <div id="cidades">Trofa, Ponta Delgada, Vila Real, Lousada, Santarém,
+                        Bragança, Palmela, Miranda do Douro, Póvoa de
+                        Varzim, Terras de Bouro
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="parte2">
+        <div class="retangulo">
+
+            <div class="calculo">
+                <div id="tipologia">Tipologia:
+                    <select id="tipo" name="select">
+                        <option selected disabled hidden>Selecione: </option>
+                        <option value="t1">T1</option>
+                        <option value="t2">T2</option>
+                        <option value="t3">T3</option>
+                    </select>
+                </div>
+                <div id="area">Area:
+                    <input type="number" id="barra_area" placeholder="m^2" />
+                </div>
+                <div id="idade">Idade do imóvel:
+                    <input type="number" id="barra_idade" placeholder="anos" />
+                </div>
+                <div class="checkboxes">
+                    <div id="garagem">Garagem:
+
+                        <div>
+                            <input type="checkbox" id="garagem_sim" class="ponto"> <label for="garagem_sim">Sim</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="garagem_nao" class="ponto"> <label for="garagem_nao">Não</label>
+                        </div>
+                    </div>
+                    <div id="transportes">Proximidade de transportes públicos:
+                        <div>
+                            <input type="checkbox" id="transportes_sim" class="ponto"> <label
+                                for="garagem_sim">Sim</label>
+                        </div>
+
+                        <div>
+                            <input type="checkbox" id="transportes_nao" class="ponto"> <label
+                                for="garagem_nao">Não</label>
+                        </div>
+                    </div>
+                </div>
+                <button id="calcular" onclick="esconder_zonas(),funcaofin(),calc()"><img
+                        src="imagens/lupa.svg"><b>PROCURAR</b></button>
+            </div>
+        </div>
+        <div id="retangulo_zonas">
+            <div id="zonas">
+                <div onclick="selec1()" id="zona1" style="cursor: pointer;">
+                    <span id="titulo_1">Zona 1:</span>
+                    <span id="valor_zona1"></span>€<br />
+                    <div id="conteudo1">
+                        Preço €/m^2: 1200<br />
+                        Área:<span id="valor_area"></span> m^2<br />
+                        Idade do imóvel:<span id="valor_idade"></span> ano(s)<br />
+                        Garagem:<span id="valor_garagem"></span><br />
+                        Proximidade de transportes públicos:<span id="valor_transportes"></span>
+                    </div>
+                </div>
+                <div id="zona2" onclick="selec2()" style="cursor: pointer;">
+                    <span id="titulo_2">Zona 2:</span>
+                    <span id="valor_zona2"> </span>€<br />
+                    <div id="conteudo2">
+                        Preço €/m^2: 2000<br />
+                        Área:<span id="valor_area1"></span> m^2<br />
+                        Idade do imóvel:<span id="valor_idade1"></span> ano(s)<br />
+                        Garagem:<span id="valor_garagem1"></span><br />
+                        Proximidade de transportes públicos:<span id="valor_transportes1"></span>
+                    </div>
+                </div>
+                <div id="zona3" onclick="selec3()" style="cursor: pointer;">
+                    <span id="titulo_3">Zona 3:</span>
+                    <span id="valor_zona3"></span>€<br />
+                    <div id="conteudo3">
+                        Preço €/m^2: 2500<br />
+                        Área: <span id="valor_area2"></span> m^2<br />
+                        Idade do imóvel: <span id="valor_idade2"></span> ano(s)<br />
+                        Garagem: <span id="valor_garagem2"></span><br />
+                        Proximidade de transportes públicos: <span id="valor_transportes2"></span>
+                    </div>
+                </div>
+            </div>
+            <button id="finance" onclick="funcao()">Financiamento</button>
+        </div>
+    </div>
+    <div id="parte3">
+        <div id="retangulo_fin">
+            <div id="fin">
+                <ul class="financiamento">
+                    <h2 id=finance_tit>Financiamento 1</h1><br>
+                        <li class="item"> Montante total <br />
+                            <span id="montante1"></span>€
+                        </li><br />
+                        <li class="item"> Valor do empréstimo<br />
+                            <span id="ve1"></span>€
+                        </li><br />
+                        <li class="item"> Taxa de juro global<br />
+                            <span id="juro1"></span>%
+                        </li><br />
+                        <li class="item"> Spread: <br />
+                            <span id="spread1"></span>%
+                        </li><br />
+                        <li class="item"> Valor da entrada inicial
+                        </li><span id="vei1"></span>€<br /><br />
+                        <li class="item"> Valor mensal da prestação </li>
+                        <span id="vp1"></span>€/mês<br />(durante 10 anos)
+                </ul>
+                <ul class="financiamento">
+                    <h2 id=finance_tit>Financiamento 2</h1><br>
+                        <li class="item"> Montante total <br />
+                            <span id="montante2"></span>€
+                        </li><br />
+                        <li class="item"> Valor do empréstimo <br />
+                            <span id="ve2"></span>€
+                        </li><br />
+                        <li class="item"> Taxa de juro global <br />
+                            <span id="juro2"></span>%
+                        </li><br />
+                        <li class="item"> Spread <br />
+                            <span id="spread2"></span>%
+                        </li><br />
+                        <li class="item"> Valor da entrada inicial </li>
+                        <span id="vei2"></span>€<br /><br />
+                        <li class="item"> Valor mensal da prestação </li>
+                        <span id="vp2"></span>€/mês<br />(durante 10 anos)
+                </ul>
+                <ul class="financiamento">
+                    <h2 id=finance_tit>Financiamento 3</h1><br>
+                        <li class="item"> Montante total<br />
+                            <span id="montante3"></span>€
+                        </li><br />
+                        <li class="item"> Valor do empréstimo<br />
+                            <span id="ve3"></span>€
+                        </li><br />
+                        <li class="item"> Taxa de juro global<br />
+                            <span id="juro3"></span>%
+                        </li><br />
+                        <li class="item"> Spread<br />
+                            <span id="spread3"></span>%
+                        </li><br />
+                        <li class="item"> Valor da entrada inicial<br />
+                        </li><span id="vei3"></span>€<br /><br />
+                        <li class="item"> Valor mensal da prestação<br />
+                        </li><span id="vp3"></span>€/mês<br />(durante 10 anos)
+                </ul>
+            </div>
+        </div>
+
+    </div>
+    <div class="sell">
+        <div id="titulo">Sell your property</div>
+        <div id="corpo">Create a listing to sell or rent your property at our website</div>
+        <button id="listing">CREATE LISTING</button>
+    </div>
+    <div class="rodape">
+        <div id="listas">
+            <div id="properties">
+                <div id="titulo">
+                    Properties
+                </div>
+                <div id="corpo">
+                    Buy<br>
+                    Rent<br>
+                    Sell<br>
+                    ERA Radar<br>
+                    What are you looking for?<br>
+                </div>
+            </div>
+            <div id="era">
+                <div id="titulo">
+                    ERA Portugal
+                </div>
+                <div id="corpo">
+                    About Us<br>
+                    Offices<br>
+                    Careers<br>
+                    Help us improve<br>
+                    Contacts<br>
+                </div>
+            </div>
+            <div id="franchising">
+                <div id="titulo">
+                    Franchising
+                </div>
+                <div id="corpo">
+                    We want the best<br>
+                    Leadership Model<br>
+                    Contact Us<br>
+                </div>
+            </div>
+            <div id="advantages">
+                <div id="titulo">
+                    Advantages
+                </div>
+                <div id="corpo">
+                    Property Appraisal<br>
+                    ERA Warranty<br>
+                    ERA New developments<br>
+                    More Advantages
+                </div>
+            </div>
+            <div id="media">
+                <div id="titulo">
+                    Media
+                </div>
+                <div id="corpo">
+                    ERA Business Accelerator
+                </div>
+            </div>
+        </div>
+        <div id="grid">
+            <div id="titulo">
+                Follow us
+            </div>
+            <div id="corpo">
+                <div id="facebook"><img src="imagens/facebook.png"></div>
+                <div id="linkedin"><img src="imagens/linkedin.png"></div>
+                <div id="youtube"><img src="imagens/youtube.png"></div>
+                <div id="instagram"><img src="imagens/instagram.png"></div>
+                <div id="pinterest"><img src="imagens/pinterest.png"></div>
+                <div id="messenger"><img src="imagens/messenger.png"></div>
+            </div>
+        </div>
+    </div>
+    <div id=footer>
+        <img id="footer_logo" src="imagens/logo_era.png" width="40px" height="50px">
+        <div id="texto">
+            © 2020. ERA Portugal . General terms . Resolução Alternativa de Litígios . Privacy Policy . Complaints Book <br>
+                All rights reserved . Powered by M&A Digital
+        </div>
+        <button>
+            <img src="imagens/globo.png" width="15px" height="15px">
+            <h1>  English  </h1>
+            <img class="seta" src="imagens/seta_baixo._rodape.png" width="12px" height="7px">
+        </button>
+    </div>
+</body>
+</html>

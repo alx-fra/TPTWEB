@@ -1,0 +1,684 @@
+$fonte1: "OpenSans", sans-serif;
+$fonte2: "Open Sans", arial;
+body{
+    margin: 0;
+    zoom: 67%;
+    .menu{
+        background-image: url("imagens/fundo_menu.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        .barra_inicial{
+            justify-content: center;
+            display: flex;
+            .logo #logo_era{
+                    img{
+                    width: 98px;
+                    height: 144px;
+                    padding-top: 20px;
+                    }
+            }
+            .sub_menu{
+                display: flex;
+                padding-left:400px;
+                padding-bottom: 100px;
+                padding-top: 40px;
+                button{
+                    background: transparent;
+                    border: none;
+                    font-family: $fonte1;
+                    font-size: 18px;
+                    color: white;
+                }
+                button:hover{
+                    color: rgba(61,61,62,.8);
+                }
+            }
+        }
+        .pesquisa{
+            display: flex;
+            justify-content: center;
+            padding: 40px 0px;
+            background-color: #00000026;
+            #pesquisa_1{
+                display: flex;
+                height: 56px;
+                padding: 0px 1px ;
+                #buy{
+                    width: 150px;
+                }
+                #buy:hover{
+                    color: white;
+                    background-color: rgba(61,61,62,.8);
+                }
+                #property_type{
+                    width: 200px;
+                }
+                #property_type:hover{
+                    color: white;
+                    background-color: rgba(61,61,62,.8);
+                }
+                #rooms{
+                    width: 150px;
+                }
+                #rooms:hover{
+                    color: white;
+                    background-color: rgba(61,61,62,.8);
+                }
+                #barra_pesquisa{
+                    width: 320px;
+                    border: 2px solid #d1d1d0;
+                    font-size: 18px;
+                    border: 1px solid #d1d1d0;
+                }
+                #barra_pesquisa:hover{
+                    color: white;
+                    background-color: rgba(61,61,62,.8);
+                }
+                #find{
+                    width: 150px;
+                    height: 54px;
+                    margin-top: 1px;
+                    background-color: #cc1332;
+                    border-top-right-radius: 5px;
+                    border-bottom-right-radius: 5px;
+                    border: transparent;
+                    font-family: $fonte1;
+                    font-size: 17px;
+                    color: white;
+                }
+                #find:hover{
+                    color: white;
+                    background-color: rgba(61,61,62,.8);
+                }
+                #buy, #property_type, #rooms{
+                    background-color: white;
+                    font-family: $fonte1;
+                    font-size: 20px;
+                    color: black;
+                    border:1px solid #d1d1d0;
+                }
+            }
+            #pesquisa_2{
+                margin-left: 2px;
+                display: flex;
+                #options{
+                    width: 145px;
+                    font-family: $fonte1;
+                    color: white;
+                    width: 134px;
+                    background-color: rgba(61,61,62,.8);
+                    font-size: 13px;
+                    text-align: center;
+                    border-radius: 5px;
+                    height: 56px;
+                    line-height: 56px;
+                    margin-left: 2px;
+                    border: solid transparent;
+                    line-height: 20px;
+                    img{
+                        width: 20px;
+                        height: 20px;
+                    }
+                }
+                #options:hover{
+                    background-color: #cc1332;
+                }
+            }
+        }
+        #separador_vermelho{
+            width: 100%;
+            height: 5px;
+            background-color: #cc1332;
+        }
+    }
+    .titulo{
+        h1{
+            text-align: center;
+           font-size: 44px; 
+           font-weight: bold;
+           
+           color: #3d3d3e;
+           font-family: $fonte1;
+           font-weight: 700;
+           margin-top: 80px;
+        }
+    }
+    .container{  
+        display: flex;
+        align-items:center ;
+        justify-content: center;
+        margin: 10px 0px 50px;
+        h2{
+            display: inline;
+            text-align: center;
+            font-family: sans-serif;
+            color: #97979A;
+            padding: 10px;
+            font-size: 16px;
+            border-bottom: 3px solid transparent;
+        }
+        h2:hover{
+            font-weight: bold;
+            border-bottom: 3px solid #3d3d3e;
+            color: #3d3d3e;
+            font-size: 16px;
+        }
+    }
+    .corpo{
+        .image-grid{
+            justify-content: center;
+            display: grid;
+            grid-gap: 10px;
+            grid-template-rows: 300px 300px 300px 300px;
+            grid-template-columns: 300px 300px 300px 300px ;
+            #casa_1{
+                grid-row: 1 / 2;
+                grid-column: 1 / 3;
+                img{
+                    width: 610px;
+                    height: 300px;
+                }
+                img:hover{
+                    opacity: 0.5;
+                }
+            }
+            #casa_2, #casa_3, #casa_4, #casa_5, #casa_6, #casa_7, #casa_7, #casa_8, #casa_9, #casa_10, #casa_11, #casa_12, #casa_13, #casa_14, #casa_15{
+                img{
+                    width: 300px;
+                    height: 300px;
+                }
+                img:hover{
+                    opacity: 0.5;
+                }
+            }
+        }
+        .fundo_corpo{
+            margin-bottom: 40px;
+            #titulo_fundo{
+                font-size: 40px;
+                color: #43464b;
+                font-weight: 700;
+                margin-top: 120px;
+                text-align: center;
+                font-family: $fonte1;
+            }
+            #flex_fundo{
+                display: flex;
+                justify-content: center;
+                margin-top: 15px;
+                #warranty, #selecao, #casa_nova{
+                    img{
+                        height:90px;
+                        margin-left: 15%;
+                    }
+                }
+                #warranty, #energy, #selecao, #casa_nova{
+                    text-align: left;
+                    margin-top: 12px;
+                    padding: 30px;
+                    #titulo{
+                        margin-top: 40px;
+                        margin-bottom: 30px;
+                        font-size: 12px;
+                        color: #43464b;
+                        font-weight: 790;
+                        font-family: $fonte1;
+                    }
+                    #corpo{
+                        font-size: 10px;
+                        color: #43464b;
+                        font-family: $fonte1;
+                        height: 80px;
+                        width: 228px;
+                    }
+                    #rodape{
+                        font-size: 12px;
+                        color: #43464b;
+                        font-weight: 790;
+                        font-family: $fonte1;
+
+                    }
+                }
+                #energy{
+                    #corpo{
+                        width: 260px;
+                    }
+                    img{
+                        height: 90px;
+                        margin-left: 10%;
+                    }
+                }
+            }
+        }
+        .common_searches{
+            background-color: #f7f7f7;
+            padding-top: 70px;
+            padding-bottom: 60px;
+            #titulo_common{
+                text-align: center;
+                color: #43464b;
+                font-family: $fonte2;
+                font-weight: 600;
+                font-size: 18px;
+                margin-right: 903px;
+            }
+            #grid_searches{
+                justify-content: center;
+                margin-top: 40px;
+                display: grid;
+                grid-template-rows: 80px 80px;
+                grid-template-columns: 329px 329px 329px;
+                grid-gap: 60px;
+                #apartments, #houses, #lands, #retail, #farms, #property{
+                    #titulo{
+                        color: #212121;
+                        font-family: $fonte2;
+                        font-weight: 600;
+                        font-size: 14px;
+                    }
+                    #cidades{
+                        padding-top: 20px;
+                        font-size: 13px;
+                        font-family: $fonte1;
+                        color: #999999;
+
+                    }
+                }
+            }
+        }
+    }
+    .sell{
+        width: 100%;
+        height: 65px;
+        padding: 13px 0;
+        background-color: #282a2a;
+        justify-content: center;
+        display: flex;
+        #titulo{
+            font-weight: 700;
+            font-size: 17px;
+            color: #fff;
+            padding-right: 20px;
+            vertical-align: middle;
+            font-family: $fonte1;
+            margin-top: 25px;
+        }
+        #corpo{
+            font-size: 17px;
+            font-weight: 300;
+            color: #959b9b;
+            padding-right: 30px;
+            margin-top: 25px;
+            vertical-align: middle;
+            font-family: $fonte1;
+        }
+        #listing{
+            display: inline-block;
+            font-size: 17px;
+            width: 207px;
+            height: 52px;
+            line-height: 45px;
+            text-align: center;
+            font-family: $fonte1;
+            font-weight: 700;
+            background-color: #cd1232;
+            color: #fff;
+            border-radius: 3px;
+            border: solid transparent;
+            margin-top: 5px;
+        }
+    }
+    .rodape{
+        height: 200px;
+        width: 100%;
+        background-color: #222323;
+        display: flex;
+        justify-content: center;
+        padding-top: 75px;
+        padding-bottom: 40px;
+        #listas{
+            display: flex;
+            #properties, #era, #franchising, #advantages, #media{
+                margin-right: 50px;
+                #titulo{
+                    margin-bottom: 30px;
+                    font-size: 15px;
+                    color: #fff;
+                    font-weight: 700;
+                    margin-bottom: 32px;
+                    font-family: $fonte1;
+                }
+                #corpo{
+                    font-family: $fonte1;
+                    font-style: 13px;
+                    color: #797B7B;
+                    line-height: 25px;
+                }
+            }
+        }
+        #grid{
+            #titulo{
+                margin-bottom: 30px;
+                font-size: 15px;
+                color: #fff;
+                font-weight: 700;
+                margin-bottom: 32px;
+                font-family: $fonte1;
+
+            }
+            #corpo{
+                display: grid;
+                grid-template-rows: 50px 50px;
+                grid-template-columns: 50px 50px 50px;
+                grid-gap: 5px;
+                #facebook, #linkedin, #youtube, #instagram, #pinterest, #messenger{
+                    width: 45px;
+                    height: 45px;
+                    background-color: #282a2a;
+                    img{
+                        width: 25px;
+                        height: 22px;
+                        padding: 10px;
+                    }
+                }
+            }
+        }
+    }
+    #parte2{
+        background-color: #f7f7f7;
+        display: none;
+        div.retangulo{
+            background-color: white;
+            border-radius: 25px;
+            width: 1200px;
+            height: 300px;
+            margin: auto auto auto auto;
+            height: 300px;
+            
+        }   
+        button#calcular{
+            background-color: #cc1332;
+            border-top-right-radius: 25px;
+            border-bottom-right-radius: 25px;
+            border: transparent;
+            font-family: $fonte1;
+            font-size: 17px;
+            color: white;
+        }
+        
+        
+        .calculo{
+            
+            line-height: 40px;
+            color:#282a2a ;
+            font-family: $fonte2;
+            font-weight: 600;
+            font-size: 14px;
+            border-radius: 25px;
+            
+            #tipologia{
+                margin-left: 500px;
+                margin-top: 20px;
+                font-size: 25px;
+                font-family: $fonte2;
+                position: absolute;
+                
+                select {
+                    width: 100px;
+                    margin: 10px;
+                    height: 35px;
+                    
+                }
+            }
+            #area{
+                margin-left: 75px;
+                margin-top: 20px;
+                font-size: 25px;
+                font-family: $fonte2;
+                position: absolute;
+                
+                input {
+                    width: 100px;
+                    margin: 10px;
+                    height: 25px;
+                    
+                }
+                
+            }
+            #idade{
+                margin-left: 75px;
+                margin-top: 90px;
+                font-size: 25px;
+                font-family: $fonte2;
+                position: absolute;
+                input {
+                    width: 100px;
+                    margin: 10px;
+                    height: 25px;
+                    
+                }
+                
+            }
+            #garagem{
+                margin-left: 75px;
+                margin-top: 150px;
+                font-size: 25px;
+                font-family: $fonte2;
+                position: absolute;
+                input {
+                    width: 100px;
+                    margin: 10px;
+                    height: 25px;
+                    
+                }
+                
+            }
+            #transportes{
+                margin-left: 500px;
+                margin-top: 150px;
+                font-size: 25px;
+                font-family: $fonte2;
+                position: absolute;
+                input {
+                    width: 100px;
+                    margin: 10px;
+                    height: 25px;
+                    
+                }
+                
+            }
+            #calcular{
+                height: 300px;
+                margin-left: 1100px;
+                
+            }
+        }
+        #retangulo_zonas{
+            padding-bottom: 40px;
+
+            #zonas{
+                
+                line-height: 40px;
+                color: #282a2a;
+                font-family: $fonte2;
+                font-weight: 600;
+                font-size: 14px;
+                display: none;
+                background-color: white;
+                border-radius: 25px;
+                width: 1200px;
+                height: 300px;
+                margin: 50px auto auto auto;
+                height: 300px;
+                justify-content: center;
+                #zona1{
+                    padding: 60px;
+                    margin-right: 75px;
+                    margin-left: 75px;
+                    font-size: 25px;
+                    font-family: $fonte2;
+                    line-height: 75px;
+                    #conteudo1{
+                        display: none;
+                    }
+                }
+                #zona1:hover{
+                    padding: 10px;
+                    font-family: $fonte2;
+                    font-size: 22px;
+                    line-height: 40px;
+                    margin-left: 40px;
+                    margin-right: 40px;
+                    background-color: #222323;
+                    border-radius: 20px;
+                    font-style: 13px;
+                    color: white;
+                    #conteudo1{
+                        display: block;
+                    }
+                }
+                #zona2{
+                    padding: 60px;
+                    margin-left: 75px;
+                    margin-right: 75px;
+                    font-size: 25px;
+                    font-family: $fonte2;
+                    line-height: 75px;
+                    #conteudo2{
+                        display: none;
+                    }
+                }
+                #zona2:hover{
+                    padding: 10px;
+                    font-family: $fonte2;
+                    font-size: 22px;
+                    line-height: 40px;
+                    margin-left: 40px;
+                    margin-right: 40px;
+                    background-color: #222323;
+                    border-radius: 20px;
+                    font-style: 13px;
+                    color: white;
+                    #conteudo2{
+                        display: block;
+                    }
+                }
+                #zona3{
+                    padding: 60px;
+                    margin-left: 75px;
+                    margin-right: 75px;
+                    font-size: 25px;
+                    font-family: $fonte2;
+                    line-height: 75px;
+                    #conteudo3{
+                        display: none;
+                    }
+                }
+                #zona3:hover{
+                    padding: 10px;
+                    font-family: $fonte2;
+                    font-size: 22px;
+                    line-height: 40px;
+                    margin-left: 40px;
+                    margin-right: 40px;
+                    background-color: #222323;
+                    border-radius: 20px;
+
+                    font-style: 13px;
+                    color: white;
+                    #conteudo3{
+                        display: block;
+                    }
+                }
+            }
+            #finance{
+                background-color: #cc1332;
+                border-bottom-right-radius: 25px;
+                border-bottom-left-radius: 25px;
+                border: transparent;
+                font-family: $fonte1;
+                font-size: 35px;
+                color: white;
+                display: none;
+                width: 1200px;
+                height: 100px;
+                margin: auto auto auto auto;
+            }
+        }
+    }
+    #parte3{
+        background-color: #f7f7f7;
+        padding-top: 20px;
+        display: none;
+        padding-bottom: 30px;
+        #retangulo_fin{
+            background-color: white;
+            border-radius: 25px;
+            width: 1200px;
+            height: auto;
+            margin: auto auto auto auto;
+            text-align: center;
+            line-height: 50px;
+            font-family: $fonte1;
+            font-size: 25px;
+            #fin{
+                display:flex;
+                padding: 10px;
+                .financiamento{
+                    margin: 20px;
+                    list-style-type:none;
+                }
+            }
+            
+        }    
+    }
+    button:hover{
+        cursor: pointer;
+    }
+}
+#footer{
+    height: 50px;
+    width: 100%;
+    background-color: #222323;
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid #797b7b34;
+    padding: 20px 0px;
+    #footer_logo{
+        margin-right: 20px;
+    }
+    button{
+        display: flex;
+        height: 40px;
+        width: 160px;
+        background-color: #282a2a;
+        text-align: center;
+        color: #fff;
+        border: transparent;
+        padding: 5px;
+        justify-content: center;
+        img{
+            margin-right: 15px;
+            margin-top: 8px;
+        }
+        h1{
+            font-size: 13px;
+        }
+        .seta{
+            margin-top: 13px;
+            margin-left: 15px;
+        }
+    }
+    #texto{
+        font-family: $fonte1;
+        font-style: 5px;
+        color: #797B7B;
+        line-height: 25px;
+        margin-right: 210px;
+    }
+
+}
+
+
+
